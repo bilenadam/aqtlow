@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>525</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>INTFC</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Resources.qrc">
+    <normaloff>:/Pix/Icons/dipstick.png</normaloff>:/Pix/Icons/dipstick.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="Page_0" name="Widget_Page_0" native="true"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="Page_1" name="Widget_Page_1" native="true"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="Page_2" name="Widget_Page_2" native="true"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="Page_3" name="Widget_Page_3" native="true"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="Page_4" name="Widget_Page_4" native="true"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="Page_5" name="Widget_Page_5" native="true"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="Page_6" name="Widget_Page_6" native="true"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="Page_7" name="Widget_Page_7" native="true"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="Page_8" name="Widget_Page_8" native="true"/>
+    </item>
+    <item row="9" column="0">
+     <widget class="Page_9" name="Widget_Page_9" native="true"/>
+    </item>
+    <item row="10" column="0">
+     <widget class="QWidget" name="SBWidget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>25</height>
+       </size>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="SBPrcIcon">
+         <property name="minimumSize">
+          <size>
+           <width>22</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>22</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>P</string>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="SBInfosIcon">
+         <property name="minimumSize">
+          <size>
+           <width>22</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>22</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>I</string>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="SBAlarmsIcon">
+         <property name="minimumSize">
+          <size>
+           <width>22</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>22</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>A</string>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="SBCatastrophiesIcon">
+         <property name="minimumSize">
+          <size>
+           <width>22</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>22</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>C</string>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="SBPageStatus">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>P</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QLabel" name="SBDateTime">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>DT</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>525</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConfigure">
+    <property name="title">
+     <string>Configure</string>
+    </property>
+    <addaction name="actionConfigure_INTFC"/>
+    <addaction name="actionConfigure_PRCs"/>
+    <addaction name="actionConfigure_Serial_Transfer"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuLog">
+    <property name="title">
+     <string>Log</string>
+    </property>
+    <addaction name="actionValue_Log"/>
+    <addaction name="actionAlert_Log"/>
+    <addaction name="actionNote_Log"/>
+    <addaction name="actionStore_a_Note"/>
+   </widget>
+   <widget class="QMenu" name="menuPages">
+    <property name="title">
+     <string>Pages</string>
+    </property>
+    <addaction name="actionPage_0"/>
+    <addaction name="actionPage_1"/>
+    <addaction name="actionPage_2"/>
+    <addaction name="actionPage_3"/>
+    <addaction name="actionPage_4"/>
+    <addaction name="actionPage_5"/>
+    <addaction name="actionPage_6"/>
+    <addaction name="actionPage_7"/>
+    <addaction name="actionPage_8"/>
+    <addaction name="actionPage_9"/>
+   </widget>
+   <widget class="QMenu" name="menuAlerts">
+    <property name="title">
+     <string>Alerts</string>
+    </property>
+    <addaction name="actionCurrent_Alerts"/>
+   </widget>
+   <widget class="QMenu" name="menuWiki">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionWiki"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuConfigure"/>
+   <addaction name="menuAlerts"/>
+   <addaction name="menuLog"/>
+   <addaction name="menuPages"/>
+   <addaction name="menuWiki"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+  </widget>
+  <action name="actionConfigure_PRCs">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/applications-engineering-2.png</normaloff>:/Pix/Icons/applications-engineering-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configure Processors</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionConfigure_INTFC">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/configure-2.png</normaloff>:/Pix/Icons/configure-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configure Interface</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionNote_Log">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/db.png</normaloff>:/Pix/Icons/db.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notes</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionAlert_Log">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/db.png</normaloff>:/Pix/Icons/db.png</iconset>
+   </property>
+   <property name="text">
+    <string>Alerts</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionValue_Log">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/db.png</normaloff>:/Pix/Icons/db.png</iconset>
+   </property>
+   <property name="text">
+    <string>Values</string>
+   </property>
+   <property name="toolTip">
+    <string>Values</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionCurrent_Alerts">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/dialog-warning-2.png</normaloff>:/Pix/Icons/dialog-warning-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Current Alerts</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionStore_a_Note">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/mail-message-new-3.png</normaloff>:/Pix/Icons/mail-message-new-3.png</iconset>
+   </property>
+   <property name="text">
+    <string>Store a Note</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/system-shutdown-6.png</normaloff>:/Pix/Icons/system-shutdown-6.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/document-print-4.png</normaloff>:/Pix/Icons/document-print-4.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionPage_0">
+   <property name="text">
+    <string>Page_0</string>
+   </property>
+  </action>
+  <action name="actionPage_1">
+   <property name="text">
+    <string>Page_1</string>
+   </property>
+  </action>
+  <action name="actionPage_2">
+   <property name="text">
+    <string>Page_2</string>
+   </property>
+  </action>
+  <action name="actionPage_3">
+   <property name="text">
+    <string>Page_3</string>
+   </property>
+  </action>
+  <action name="actionPage_4">
+   <property name="text">
+    <string>Page_4</string>
+   </property>
+  </action>
+  <action name="actionPage_5">
+   <property name="text">
+    <string>Page_5</string>
+   </property>
+  </action>
+  <action name="actionPage_6">
+   <property name="text">
+    <string>Page_6</string>
+   </property>
+  </action>
+  <action name="actionPage_7">
+   <property name="text">
+    <string>Page_7</string>
+   </property>
+  </action>
+  <action name="actionPage_8">
+   <property name="text">
+    <string>Page_8</string>
+   </property>
+  </action>
+  <action name="actionPage_9">
+   <property name="text">
+    <string>Page_9</string>
+   </property>
+  </action>
+  <action name="actionWiki">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/dialog-question-2.png</normaloff>:/Pix/Icons/dialog-question-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Wiki</string>
+   </property>
+   <property name="toolTip">
+    <string>firefox http://code.google.com/p/aqtlow/w/list</string>
+   </property>
+  </action>
+  <action name="actionConfigure_Serial_Transfer">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/applications-development-5.png</normaloff>:/Pix/Icons/applications-development-5.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configure Serial Transfer</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/help-about-3.png</normaloff>:/Pix/Icons/help-about-3.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Page_0</class>
+   <extends>QWidget</extends>
+   <header>page_0.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Page_1</class>
+   <extends>QWidget</extends>
+   <header>page_1.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Page_2</class>
+   <extends>QWidget</extends>
+   <header>page_2.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Page_3</class>
+   <extends>QWidget</extends>
+   <header>page_3.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Page_4</class>
+   <extends>QWidget</extends>
+   <header>page_4.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Page_5</class>
+   <extends>QWidget</extends>
+   <header>page_5.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Page_6</class>
+   <extends>QWidget</extends>
+   <header>page_6.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Page_7</class>
+   <extends>QWidget</extends>
+   <header>page_7.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Page_8</class>
+   <extends>QWidget</extends>
+   <header>page_8.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Page_9</class>
+   <extends>QWidget</extends>
+   <header>page_9.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

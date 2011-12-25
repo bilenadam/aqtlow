@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>About</class>
+ <widget class="QDialog" name="About">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>473</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="AboutTab">
+      <attribute name="title">
+       <string>About</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="2,10">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QTextBrowser" name="textBrowser_3">
+             <property name="minimumSize">
+              <size>
+               <width>235</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>235</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="palette">
+              <palette>
+               <active>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </active>
+               <inactive>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </inactive>
+               <disabled>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </disabled>
+              </palette>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/Pix/Icons/dipstick-small.png&quot; /&gt; &lt;span style=&quot; font-size:12pt;&quot;&gt;aQtLow&lt;/span&gt; V1.0&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://code.google.com/p/aqtlow/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;code.google.com/p/aqtlow&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowser_4">
+             <property name="minimumSize">
+              <size>
+               <width>235</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>235</width>
+               <height>85</height>
+              </size>
+             </property>
+             <property name="palette">
+              <palette>
+               <active>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </active>
+               <inactive>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </inactive>
+               <disabled>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </disabled>
+              </palette>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QTextBrowser" name="textBrowser">
+             <property name="minimumSize">
+              <size>
+               <width>235</width>
+               <height>275</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>235</width>
+               <height>275</height>
+              </size>
+             </property>
+             <property name="palette">
+              <palette>
+               <active>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </active>
+               <inactive>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </inactive>
+               <disabled>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </disabled>
+              </palette>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt; font-weight:600; font-style:italic;&quot;&gt;Written with:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:6pt;&quot;&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/Pix/Icons/qtcreator.png&quot; /&gt; &lt;span style=&quot; font-size:12pt;&quot;&gt;Qt Creator&lt;/span&gt; V2.1.0&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://qt.nokia.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;qt.nokia.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:6pt; color:#000000;&quot;&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;QextSerialPort&lt;/span&gt; V1.2.0&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://code.google.com/p/qextserialport/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;code.google.com/p/qextserialport&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:6pt; color:#000000;&quot;&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/Pix/Icons/arduino.xpm&quot; /&gt; &lt;span style=&quot; font-size:12pt;&quot;&gt;Arduino&lt;/span&gt; V0022A&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://www.arduino.cc/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.arduino.cc&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:6pt; font-weight:600; font-style:italic; color:#000000;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt; font-weight:600; font-style:italic; color:#000000;&quot;&gt;Icons from:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:6pt; color:#000000;&quot;&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Open Icon Library&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://openiconlibrary.sourceforge.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;openiconlibrary.sourceforge.net&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7pt; color:#000000;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowser_2">
+             <property name="minimumSize">
+              <size>
+               <width>235</width>
+               <height>275</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>235</width>
+               <height>275</height>
+              </size>
+             </property>
+             <property name="palette">
+              <palette>
+               <active>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </active>
+               <inactive>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </inactive>
+               <disabled>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </disabled>
+              </palette>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt; font-weight:600; font-style:italic;&quot;&gt;Runs on:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:6pt;&quot;&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/Pix/Icons/Mint.png&quot; /&gt; &lt;span style=&quot; font-size:12pt;&quot;&gt;Mint&lt;/span&gt; V11&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://linuxmint.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;linuxmint.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt; font-weight:600; font-style:italic;&quot;&gt;Plays sound through:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:6pt;&quot;&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;img src=&quot;:/Pix/Icons/vlc.png&quot; /&gt; &lt;span style=&quot; font-size:12pt;&quot;&gt;VLC&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://www.videolan.org/vlc/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.videolan.org/vlc&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7pt;&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:6pt; font-weight:600; font-style:italic; color:#000000;&quot;&gt;Sounds from:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:6pt; color:#000000;&quot;&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Free Sound&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://www.freesound.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.freesound.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="LicenseTab">
+      <attribute name="title">
+       <string>License</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QTextBrowser" name="textBrowser_5">
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://code.google.com/p/aqtlow/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;aQtLow&lt;/span&gt;&lt;/a&gt; -&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;an&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;Arduino&lt;span style=&quot; color:#c0c0c0;&quot;&gt; &lt;/span&gt;interface.&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Copyright&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;(C)&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;2011&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Dee&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Wykoff&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;This&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;program&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;is&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;free&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;software:&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;you&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;can&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;redistribute&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;it&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;and/or&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;modify it&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;under&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;terms&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;of&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;GNU&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;General&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Public&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;License&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;as&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;published&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;by the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Free&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Software&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Foundation,&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;either&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;version&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;of&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;License,&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;or (at&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;your&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;option)&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;any&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;later&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;version.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;This&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;program&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;is&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;distributed&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;in&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;hope&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;that&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;it&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;will&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;be&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;useful, but&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;WITHOUT&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;ANY&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;WARRANTY;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;without&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;even&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;implied&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;warranty&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;of MERCHANTABILITY&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;or&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;FITNESS&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;FOR&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;A&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;PARTICULAR&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;PURPOSE.&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;See&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;the GNU&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;General&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Public&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;License&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;for&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;more&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;details.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;You&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;should&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;have&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;received&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;a&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;copy&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;of&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;GNU&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;General&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;Public&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;License along&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;with&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;this&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;program.&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;If&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;not,&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;see&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;a href=&quot;http://www.gnu.org/licenses/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;www.gnu.org/licenses&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Courier New,courier';&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

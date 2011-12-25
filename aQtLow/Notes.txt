@@ -1,0 +1,7 @@
+http://stackoverflow.com/questions/681148/how-to-print-a-qt-dialog-or-window
+http://stackoverflow.com/questions/1471764/global-variable-in-qt-how-to
+
+
+
+
+
