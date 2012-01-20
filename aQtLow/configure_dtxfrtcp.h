@@ -16,41 +16,39 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef DTRANSFERUSB_H
-#define DTRANSFERUSB_H
+#ifndef CONFIGURE_DTXFRTCP_H
+#define CONFIGURE_DTXFRTCP_H
 
-#include <QThread>
-#include <QtCore>
-#include <qextserialport.h>
+#include <QDialog>
 
-struct SerialTransferConfiguration {
-    QString Port;
-    int Prc, DTxfrUsb, Delay;
-};
+#include "globals.h"
 
-class dtransferusb : public QThread
+namespace Ui {
+    class configure_dtxfrtcp;
+}
+
+class configure_dtxfrtcp : public QDialog
 {
     Q_OBJECT
-public:
-    explicit dtransferusb(QObject *parent = 0);
-
-private:
-    QextSerialPort *SerPort;
-    SerialTransferConfiguration Cfg;
-    int ExpectingResponse;
 
 signals:
-    void Refresh();
+    void Screenshot(QPixmap Screenshot);
 
-public slots:
-    void run();
-    void Init(QString Path, int DTxfrUsbNum);
+public:
+    explicit configure_dtxfrtcp(QWidget *parent = 0);
+    ~configure_dtxfrtcp();
+
+private:
+    Ui::configure_dtxfrtcp *ui;
 
 private slots:
-    void Send(int Function, int Position, int Data);
-    void Receive();
-    int  WriteRequest();
+    void on_pushButton_Print_clicked();
+    void on_pushButton_Save_clicked();
+    void on_pushButton_Load_clicked();
+    void LoadConfig();
+    void on_pushButton_Clear_clicked();
+    void on_spinBox_DTxfrTcp_valueChanged(int );
 
 };
 
-#endif // DTRANSFERUSB_H
+#endif // CONFIGURE_DTXFRTCP_H

@@ -24,6 +24,7 @@
 
 #include "configure_prcs.h"
 #include "configure_dtxfrusb.h"
+#include "configure_dtxfrtcp.h"
 #include "configure_intfc.h"
 #include "currentalerts.h"
 #include "alertlog.h"
@@ -87,6 +88,7 @@ private slots:
     void on_actionWiki_triggered();
     void on_actionConfigure_Serial_Transfer_triggered();
     void on_actionAbout_triggered();
+    void on_actionConfigure_TCP_Transfer_triggered();
 };
 
 #endif // MAINWINDOW_H

@@ -171,6 +171,14 @@ void MainWindow::on_actionConfigure_Serial_Transfer_triggered()
     QObject::connect(wndConfigure_DTxfrUsbs, SIGNAL(Screenshot(QPixmap)), this, SLOT(PrintPixmap(QPixmap)));
 }
 
+void MainWindow::on_actionConfigure_TCP_Transfer_triggered()
+{
+    static configure_dtxfrtcp *wndConfigure_DTxfrTcps = new configure_dtxfrtcp(this);
+    wndConfigure_DTxfrTcps->setModal(true);
+    wndConfigure_DTxfrTcps->show();
+    QObject::connect(wndConfigure_DTxfrTcps, SIGNAL(Screenshot(QPixmap)), this, SLOT(PrintPixmap(QPixmap)));
+}
+
 void MainWindow::on_actionConfigure_INTFC_triggered()
 {
     static configure_intfc *wndConfigure_Intfc = new configure_intfc(this);
@@ -429,4 +437,5 @@ void MainWindow::SetupPages()
     connect(this, SIGNAL(RefreshPages()), ui->Widget_Page_9, SLOT(Refresh()));
     connect(ui->Widget_Page_9, SIGNAL(PageStatus(QString)), this, SLOT(PageStatus(QString)));
 }
+
 

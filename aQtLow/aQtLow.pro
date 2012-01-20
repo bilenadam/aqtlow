@@ -13,8 +13,7 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
+
 #-------------------------------------------------
 #
 # Project created by QtCreator 2011-10-22T15:53:45
@@ -79,7 +78,9 @@ SOURCES += main.cpp\
     configure_dtxfrusb.cpp \
     qextserialport/src/qextserialport.cpp \
     dtransferusb.cpp \
-    about.cpp
+    about.cpp \
+    configure_dtxfrtcp.cpp \
+    dtransfertcp.cpp
 
 HEADERS += mainwindow.h \
     register.h \
@@ -117,7 +118,9 @@ HEADERS += mainwindow.h \
     configure_dtxfrusb.h \
     configure_dtxfrusb.h \
     dtransferusb.h \
-    about.h
+    about.h \
+    configure_dtxfrtcp.h \
+    dtransfertcp.h
 
 FORMS += mainwindow.ui \
     configure_prcs.ui \
@@ -141,7 +144,8 @@ FORMS += mainwindow.ui \
     Pages/page_9.ui \
     notelog.ui \
     configure_dtxfrusb.ui \
-    about.ui
+    about.ui \
+    configure_dtxfrtcp.ui
 
 wince*: DEPLOYMENT_PLUGIN += qsqlite
 

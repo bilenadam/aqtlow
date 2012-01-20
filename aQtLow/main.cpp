@@ -20,6 +20,7 @@
 #include "mainwindow.h"
 
 #include "dtransferusb.h"
+#include "dtransfertcp.h"
 #include "logger.h"
 #include "alerthandling.h"
 #include "globals.h"
@@ -107,6 +108,28 @@ int main(int argc, char *argv[])
                 }
             }
             DTxfrUsbSettings.disconnect();
+        }
+    }
+    dtransfertcp DTxfrTcp[NUMBER_OF_DTXFRTCPS];
+    for(int i = 0; i < NUMBER_OF_DTXFRTCPS; i++)
+    {
+        QFile DTxfrTcpFile(ConfigPath + "/" + QString::number(i) + ".dtxfrtcp.ini");
+        if(DTxfrTcpFile.exists())
+        {
+            QSettings DTxfrTcpSettings(DTxfrTcpFile.fileName(), QSettings::IniFormat);
+            if(DTxfrTcpSettings.value("Config/Enabled").toBool())
+            {
+                int j = DTxfrTcpSettings.value("Config/Processor").toInt();
+                QFile PrcFile(ConfigPath + "/" + QString::number(j) + ".prc.ini");
+                if(PrcFile.exists())
+                {
+                    P[j].Init(ConfigPath, j);
+                    DTxfrTcp[i].Init(ConfigPath, i);
+                    DTxfrTcp[i].start(QThread::LowestPriority);
+                    QObject::connect(&DTxfrTcp[i], SIGNAL(Refresh()), &w, SLOT(Refresh()));
+                }
+            }
+            DTxfrTcpSettings.disconnect();
         }
     }
 

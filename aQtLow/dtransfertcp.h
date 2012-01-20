@@ -16,27 +16,27 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef DTRANSFERUSB_H
-#define DTRANSFERUSB_H
+#ifndef DTRANSFERTCP_H
+#define DTRANSFERTCP_H
 
 #include <QThread>
 #include <QtCore>
-#include <qextserialport.h>
+#include <QTcpSocket>
 
-struct SerialTransferConfiguration {
-    QString Port;
-    int Prc, DTxfrUsb, Delay;
+struct TcpTransferConfiguration {
+    QString Address;
+    int Prc, DTxfrTcp, Delay;
 };
 
-class dtransferusb : public QThread
+class dtransfertcp : public QThread
 {
     Q_OBJECT
 public:
-    explicit dtransferusb(QObject *parent = 0);
+    explicit dtransfertcp(QObject *parent = 0);
 
 private:
-    QextSerialPort *SerPort;
-    SerialTransferConfiguration Cfg;
+    QTcpSocket *Socket;
+    TcpTransferConfiguration Cfg;
     int ExpectingResponse;
 
 signals:
@@ -44,7 +44,7 @@ signals:
 
 public slots:
     void run();
-    void Init(QString Path, int DTxfrUsbNum);
+    void Init(QString Path, int DTxfrTcpNum);
 
 private slots:
     void Send(int Function, int Position, int Data);
@@ -53,4 +53,4 @@ private slots:
 
 };
 
-#endif // DTRANSFERUSB_H
+#endif // DTRANSFERTCP_H

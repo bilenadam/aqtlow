@@ -220,6 +220,7 @@
     <addaction name="actionConfigure_INTFC"/>
     <addaction name="actionConfigure_PRCs"/>
     <addaction name="actionConfigure_Serial_Transfer"/>
+    <addaction name="actionConfigure_TCP_Transfer"/>
     <addaction name="separator"/>
     <addaction name="actionPrint"/>
     <addaction name="actionExit"/>
@@ -467,6 +468,15 @@
    </property>
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionConfigure_TCP_Transfer">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/Pix/Icons/applications-development-5.png</normaloff>:/Pix/Icons/applications-development-5.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configure TCP Transfer</string>
    </property>
   </action>
  </widget>
