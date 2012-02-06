@@ -31,7 +31,7 @@ dtransferusb::dtransferusb(QObject *parent) :
 void dtransferusb::run()
 {
     SerPort = new QextSerialPort();
-    int ExpectedLength = NUMBER_OF_REGISTERS * 2 + NUMBER_OF_COILS / 8;
+    int ExpectedLength = NUMBER_OF_REGISTERS * 2 + NUMBER_OF_COILS / 8 + 1;
     QTime Startup, Sleeper;
     Startup.start();
     while(!Shutdown)
@@ -46,7 +46,7 @@ void dtransferusb::run()
             }
             if(SerPort->bytesAvailable() >= ExpectedLength)
             {//data found
-                Receive();
+                Receive(ExpectedLength);
             }
             else
             {                  
@@ -128,40 +128,55 @@ int dtransferusb::WriteRequest()
     return Status;
 }
 
-void dtransferusb::Receive()
+void dtransferusb::Receive(int Length)
 {
     QByteArray Bytes;
-    int CoilPosition, CoilMask;
+    int BytesPosition, CoilPosition, CoilMask;
     bool bolValue;
     quint8 H, L;
     qint16 Data;
-    for(int i = 0; i < NUMBER_OF_REGISTERS; i++)
+    BytesPosition = 0;
+    Bytes = SerPort->read(Length);
+    quint8 Check = 0x55;
+    for(int i = 0; i < (Length-1); i++)
     {
-        Bytes = SerPort->read(2);
-        H = Bytes[0];
-        L = Bytes[1];
-        Data = 0;
-        Data |= H << 8;
-        Data |= L;
-        if((P[Cfg.Prc].R[i].IsConfigured) && (i < NUMBER_OF_REGISTERS )) P[Cfg.Prc].R[i].FromPrc(Data);
+        Check = Check ^ Bytes[i];
     }
-    for(int i = 0; i < NUMBER_OF_COILS/8; i++)
+    if(Bytes[Length-1] == Check)
     {
-        Bytes = SerPort->read(1);
-        for(int j = 0; j < 8; j++)
-        {//coil address is starting coil + intCoilPosition
-            CoilPosition = i * 8 + j;
-            if((P[Cfg.Prc].C[CoilPosition].IsConfigured) && (CoilPosition < NUMBER_OF_COILS))
-            {
-                CoilMask = 1<<j;
-                bolValue = (Bytes[0] & CoilMask) > 0;
-                P[Cfg.Prc].C[CoilPosition].FromPrc(bolValue);
-            }
+        for(int i = 0; i < NUMBER_OF_REGISTERS; i++)
+        {
+            H = Bytes[BytesPosition];
+            BytesPosition++;
+            L = Bytes[BytesPosition];
+            BytesPosition++;
+            Data = 0;
+            Data |= H << 8;
+            Data |= L;
+            if((P[Cfg.Prc].R[i].IsConfigured) && (i < NUMBER_OF_REGISTERS )) P[Cfg.Prc].R[i].FromPrc(Data);
         }
+        for(int i = 0; i < NUMBER_OF_COILS/8; i++)
+        {
+            for(int j = 0; j < 8; j++)
+            {//coil address is starting coil + intCoilPosition
+                CoilPosition = i * 8 + j;
+                if((P[Cfg.Prc].C[CoilPosition].IsConfigured) && (CoilPosition < NUMBER_OF_COILS))
+                {
+                    CoilMask = 1<<j;
+                    bolValue = (Bytes[BytesPosition] & CoilMask) > 0;
+                    P[Cfg.Prc].C[CoilPosition].FromPrc(bolValue);
+                }
+            }
+            BytesPosition++;
+        }
+        ExpectingResponse = 0;
+        P[Cfg.Prc].CommSuccess();
+    }
+    else
+    {
+        qDebug() << "DTxfrUsb " << QString::number(Cfg.DTxfrUsb) << " error checking failed";
     }
     SerPort->flush();
-    ExpectingResponse = 0;
-    P[Cfg.Prc].CommSuccess();
 }
 
 void dtransferusb::Send(int Function, int Position, int Data)
@@ -173,7 +188,13 @@ void dtransferusb::Send(int Function, int Position, int Data)
     Bytes[3] = Position % 256; //Position low
     Bytes[4] = Data     / 256; //Data high
     Bytes[5] = Data     % 256; //Data low
-    SerPort->write(Bytes, 6);
+    quint8 Check = 0x55;
+    for(int i = 0; i < 6; i++)
+    {
+        Check = Check ^ Bytes[i];
+    }
+    Bytes[6] = Check;
+    SerPort->write(Bytes, 7);
     if(Function == 1) ExpectingResponse++;
 }
 

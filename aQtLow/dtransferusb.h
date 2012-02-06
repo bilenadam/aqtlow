@@ -48,7 +48,7 @@ public slots:
 
 private slots:
     void Send(int Function, int Position, int Data);
-    void Receive();
+    void Receive(int Length);
     int  WriteRequest();
 
 };

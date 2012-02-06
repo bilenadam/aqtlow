@@ -33,23 +33,17 @@ void dTxfrUSB::Run()
 		3	Low byte
 		4	Hi byte of data (if a write command)
 		5	Low byte
-                6       Check byte
 */
   uint8_t ByteArray[255];
   int16_t ArrayPosition = 0;
-  uint8_t Check = 0x55;
-  if(Serial.available()>=7)
+  if(Serial.available()>=6)
   {    
     while(Serial.available())
     {
-      ByteArray[ArrayPosition] = Serial.read();      
+      ByteArray[ArrayPosition] = Serial.read();
       ArrayPosition++;
     }
-    for(int i = 0; i < 6; i++)
-    {
-      Check = Check ^ ByteArray[i];
-    }
-    if(Check == ByteArray[6])
+    if(true)
     {
       SetFC(word(ByteArray[0],ByteArray[1]));
       if(!Active)
@@ -101,18 +95,14 @@ void dTxfrUSB::Send()
 		191	Low byte
 		192	C[0-7]
 		203	C[88-95]
-                204     Check byte
 */
   uint8_t ByteArray[255];
-  uint8_t Check = 0x55;
   int16_t ArrayPosition = 0;
   for(int i = 0; i < DT_N_R; i++)
   {
     ByteArray[ArrayPosition] = highByte(R[i]);
-    Check = Check ^ ByteArray[ArrayPosition];
     ArrayPosition++;
     ByteArray[ArrayPosition] = lowByte(R[i]);
-    Check = Check ^ ByteArray[ArrayPosition];
     ArrayPosition++;
   }
   uint8_t Byte;
@@ -125,11 +115,8 @@ void dTxfrUSB::Send()
       Byte |= (C[i*8+j] << j);
     }
     ByteArray[ArrayPosition] = Byte;
-    Check = Check ^ ByteArray[ArrayPosition];
     ArrayPosition++;
   }
-  ByteArray[ArrayPosition] = Check;
-  ArrayPosition++;
   Serial.write(ByteArray, ArrayPosition);
 }
 
