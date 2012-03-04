@@ -19,8 +19,6 @@
 #include "page_0.h"
 #include "ui_page_0.h"
 
-#include <QDebug>
-
 Page_0::Page_0(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Page_0)
@@ -38,16 +36,30 @@ void Page_0::Refresh()
     if(!this->isHidden()) emit PageStatus(Page);
 
     RegisterByName Rbn;
+    CoilByName Cbn;
 
-    if(Rbn.Found("TempVolts", Page)) ui->widget_Voltage->Setup(Rbn.p, Rbn.r, 0, 10, 3);
-    if(Rbn.Found("TempTweak", Page)) ui->widget_Tweak->Setup(Rbn.p, Rbn.r, 1, 10, 3);
-    if(Rbn.Found("TempF", Page))
+    int BarMin, BarMax;
+
+    if(Rbn.Found("V", Page)) ui->widget_V->Setup(Rbn.p, Rbn.r, 0, 10, 3);
+    if(Rbn.Found("VLo", Page)) ui->widget_Lo->Setup(Rbn.p, Rbn.r, 1, 10, 3);
+    if(Rbn.Found("VHi", Page)) ui->widget_Hi->Setup(Rbn.p, Rbn.r, 1, 10, 3);
+    if(Rbn.Found("Range", Page))
     {
-        ui->widget_Farenheit->Setup(Rbn.p, Rbn.r, 0, 10, 1);
-        ui->progressBar_Farenheit->setValue(Rbn.R->Value);
-        ui->progressBar_Farenheit->repaint();
+        ui->widget_Range->Setup(Rbn.p, Rbn.r, 1, 10, 1);
+        BarMin = 0;
+        BarMax = Rbn.R->Value;
     }
-    if(Rbn.Found("TempC", Page)) ui->widget_Celcius->Setup(Rbn.p, Rbn.r, 0, 10, 1);
+    if(Rbn.Found("NL", Page)) ui->widget_NL->Setup(Rbn.p, Rbn.r, 1, 10, 3);
 
+    if(Rbn.Found("Lbs", Page))
+    {
+        ui->widget_Lbs->Setup(Rbn.p, Rbn.r, 0, 30, 1);
+        ui->progressBar_Lbs->setValue(Rbn.R->Value);
+        ui->progressBar_Lbs->setMinimum(BarMin);
+        ui->progressBar_Lbs->setMaximum(BarMax);
+        ui->progressBar_Lbs->repaint();
+    }
+
+    if(Rbn.Found("MaxLbs", Page)) ui->widget_MaxLbs->Setup(Rbn.p, Rbn.r, 0, 30, 1);
+    if(Rbn.Found("Score", Page)) ui->widget_Score->Setup(Rbn.p, Rbn.r, 0, 30, 1);
 }
-

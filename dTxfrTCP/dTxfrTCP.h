@@ -17,7 +17,7 @@
 */
 
 //Comment out next line if using 1.0
-#include "WProgram.h"
+//#include "WProgram.h"
 
 #include <SPI.h>
 #include <Ethernet.h>

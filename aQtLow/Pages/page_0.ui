@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>596</width>
+    <width>798</width>
     <height>452</height>
    </rect>
   </property>
@@ -14,28 +14,15 @@
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="1">
-    <spacer name="verticalSpacer">
+   <item row="2" column="1">
+    <spacer name="verticalSpacer_3">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>20</width>
-       <height>138</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="1" column="0">
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>80</width>
-       <height>20</height>
+       <width>465</width>
+       <height>32</height>
       </size>
      </property>
     </spacer>
@@ -44,40 +31,50 @@
     <layout class="QVBoxLayout" name="verticalLayout_5">
      <item>
       <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <family>Sans Serif</family>
+         <pointsize>36</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
        <property name="text">
-        <string>Temperature</string>
+        <string>Grip Test - Squeeze the wooden paddles and get judged by a machine!</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <spacer name="horizontalSpacer_8">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Minimum</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_6">
          <item>
           <widget class="QLabel" name="label_6">
            <property name="text">
-            <string>Voltage</string>
+            <string>Reading</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="RegisterDisplay" name="widget_Voltage" native="true">
+          <widget class="RegisterDisplay" name="widget_V" native="true">
            <property name="minimumSize">
             <size>
              <width>81</width>
@@ -87,14 +84,14 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label">
+          <widget class="QLabel" name="label_2">
            <property name="text">
-            <string>Tweak</string>
+            <string>Lo</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="RegisterDisplay" name="widget_Tweak" native="true">
+          <widget class="RegisterDisplay" name="widget_Lo" native="true">
            <property name="minimumSize">
             <size>
              <width>81</width>
@@ -104,14 +101,65 @@
           </widget>
          </item>
          <item>
-          <spacer name="verticalSpacer_4">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Hi</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="RegisterDisplay" name="widget_Hi" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>81</width>
+             <height>21</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Range</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="RegisterDisplay" name="widget_Range" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>81</width>
+             <height>21</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>Non Linear</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="RegisterDisplay" name="widget_NL" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>81</width>
+             <height>21</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
            <property name="orientation">
             <enum>Qt::Vertical</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>40</height>
+             <height>20</height>
             </size>
            </property>
           </spacer>
@@ -134,21 +182,55 @@
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
-          <widget class="QProgressBar" name="progressBar_Farenheit">
-           <property name="minimumSize">
-            <size>
-             <width>10</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>10</width>
-             <height>16777215</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QProgressBar{
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="font">
+              <font>
+               <family>Sans Serif</family>
+               <pointsize>22</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Lbs</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="RegisterDisplay" name="widget_Lbs" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>81</width>
+               <height>21</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QProgressBar" name="progressBar_Lbs">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>9999</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QProgressBar{
 border: 0px solid black;
 padding: 0px;
 border-radius: 0px;
@@ -158,42 +240,170 @@ QProgressBar::chunk{
 background: red;
 border-radius: 0px;
 }</string>
-           </property>
-           <property name="minimum">
-            <number>0</number>
-           </property>
-           <property name="maximum">
-            <number>120</number>
-           </property>
-           <property name="value">
-            <number>31</number>
-           </property>
-           <property name="textVisible">
-            <bool>false</bool>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_7">
-           <item>
-            <widget class="QLabel" name="label_7">
-             <property name="text">
-              <string>Farenheit</string>
+             </property>
+             <property name="minimum">
+              <number>0</number>
+             </property>
+             <property name="maximum">
+              <number>4</number>
+             </property>
+             <property name="value">
+              <number>-1</number>
+             </property>
+             <property name="textVisible">
+              <bool>false</bool>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="RegisterDisplay" name="widget_Farenheit" native="true">
-             <property name="minimumSize">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Candy Ass</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>Lion Tamer</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
               <size>
-               <width>81</width>
-               <height>21</height>
+               <width>20</width>
+               <height>40</height>
               </size>
              </property>
-            </widget>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="font">
+                  <font>
+                   <family>Sans Serif</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Max</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="RegisterDisplay" name="widget_MaxLbs" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>81</width>
+                   <height>21</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QLabel" name="label_9">
+                 <property name="font">
+                  <font>
+                   <family>Sans Serif</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Score</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="RegisterDisplay" name="widget_Score" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>81</width>
+                   <height>21</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
            </item>
            <item>
             <spacer name="verticalSpacer_5">
@@ -212,79 +422,45 @@ border-radius: 0px;
          </item>
         </layout>
        </item>
-       <item>
-        <spacer name="horizontalSpacer_10">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_8">
-         <item>
-          <widget class="QLabel" name="label_8">
-           <property name="text">
-            <string>Celcius</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="RegisterDisplay" name="widget_Celcius" native="true">
-           <property name="minimumSize">
-            <size>
-             <width>81</width>
-             <height>21</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="verticalSpacer_6">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </item>
       </layout>
      </item>
     </layout>
    </item>
    <item row="1" column="2">
-    <spacer name="horizontalSpacer_2">
+    <spacer name="horizontalSpacer_10">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>79</width>
+       <width>40</width>
        <height>20</height>
       </size>
      </property>
     </spacer>
    </item>
-   <item row="2" column="1">
-    <spacer name="verticalSpacer_2">
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer_6">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1">
+    <spacer name="verticalSpacer_6">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
-       <height>138</height>
+       <height>40</height>
       </size>
      </property>
     </spacer>

@@ -43,7 +43,7 @@ private:
 
 public slots:
     void Refresh();
-    void SetPage(QString Page);
+    void SetPage(QString Page) {this->Page = Page;}
 
 signals:
     void PageStatus(QString Status);

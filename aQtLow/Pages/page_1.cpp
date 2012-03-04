@@ -35,26 +35,4 @@ void Page_1::Refresh()
 {
     if(!this->isHidden()) emit PageStatus(Page);
 
-    RegisterByName Rbn;
-    CoilByName Cbn;
-
-    if(Rbn.Found("PressVolts", Page)) ui->widget_Voltage->Setup(Rbn.p, Rbn.r, 0, 10, 3);
-    if(Rbn.Found("PressOz", Page))
-    {
-        ui->widget_Ounces->Setup(Rbn.p, Rbn.r, 0, 10, 1);
-        ui->progressBar_Ounces->setValue(Rbn.R->Value);
-        ui->progressBar_Ounces->setMinimum(Rbn.R->IntfcLow);
-        ui->progressBar_Ounces->setMaximum(Rbn.R->IntfcHigh);
-        ui->progressBar_Ounces->repaint();
-    }
-    if(Rbn.Found("PressThreshold", Page)) ui->widget_Threshold->Setup(Rbn.p, Rbn.r, 1, 10, 1);
-    if(Cbn.Found("PressTouching", Page)) ui->widget_Touching->Setup(Cbn.p, Cbn.c, "gray", "green", 25, "", "Touching", 10);
-    if(Rbn.Found("PressMax", Page)) ui->widget_Max->Setup(Rbn.p, Rbn.r, 0, 10, 1);
-    if(Cbn.Found("PressReset", Page)) ui->widget_Reset->Setup(Cbn.p, Cbn.c, CoilButton::SET, "Reset Max", 25, 10);
-
-}
-
-void Page_1::SetPage(QString Page)
-{
-    this->Page = Page;
 }

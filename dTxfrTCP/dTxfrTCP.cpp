@@ -18,7 +18,9 @@
 
 #include "dTxfrTCP.h"
 
-Server server(51141);
+//0022 use Server
+//1.0  use EthernetServer
+EthernetServer server(51141);
 
 dTxfrTCP::dTxfrTCP()
 {
@@ -47,7 +49,9 @@ void dTxfrTCP::Run()
 		192	C[0-7]
 		203	C[88-95]
 */
-  Client client = server.available();
+  //0022 use Client
+  //1.0  use EthernetClient
+  EthernetClient client = server.available();
   uint8_t ByteArray[255];
   int16_t ArrayPosition = 0;
   if(client.available())

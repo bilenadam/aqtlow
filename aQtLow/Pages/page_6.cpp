@@ -36,8 +36,3 @@ void Page_6::Refresh()
     if(!this->isHidden()) emit PageStatus(Page);
 
 }
-
-void Page_6::SetPage(QString Page)
-{
-    this->Page = Page;
-}
