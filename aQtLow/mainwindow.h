@@ -44,6 +44,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
     bool EnableSound;
+    QString SBMode;
 
 private:
     Ui::MainWindow *ui;    

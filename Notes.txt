@@ -1,0 +1,16 @@
+these folders are:
+
+
+dTxfrTCP and dTxfrUSB
+Arduino libraries (put in /home/user/sketchbook/libraries)
+
+GripTest
+Arduino program for Grip Test game / serial only / non-gui (put in /home/dee/sketchbook)
+
+
+aQtLow
+QT app (put in QT projects folder)
+
+aQtLowData
+data files for QT app (put in /home/user)
+If the QT app can't find it, it will build a skeleton of it in the default user folder.

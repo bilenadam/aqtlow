@@ -14,19 +14,6 @@
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="2" column="1">
-    <spacer name="verticalSpacer_3">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>465</width>
-       <height>32</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
    <item row="1" column="1">
     <layout class="QVBoxLayout" name="verticalLayout_5">
      <item>
@@ -34,8 +21,10 @@
        <property name="font">
         <font>
          <family>Sans Serif</family>
-         <pointsize>36</pointsize>
-         <italic>true</italic>
+         <pointsize>26</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
         </font>
        </property>
        <property name="text">
@@ -67,7 +56,7 @@
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_6">
          <item>
-          <widget class="QLabel" name="label_6">
+          <widget class="QLabel" name="label_V">
            <property name="text">
             <string>Reading</string>
            </property>
@@ -84,7 +73,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_2">
+          <widget class="QLabel" name="label_Lo">
            <property name="text">
             <string>Lo</string>
            </property>
@@ -101,7 +90,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_3">
+          <widget class="QLabel" name="label_Hi">
            <property name="text">
             <string>Hi</string>
            </property>
@@ -118,7 +107,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_4">
+          <widget class="QLabel" name="label_Range">
            <property name="text">
             <string>Range</string>
            </property>
@@ -135,7 +124,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_10">
+          <widget class="QLabel" name="label_NL">
            <property name="text">
             <string>Non Linear</string>
            </property>
@@ -158,26 +147,13 @@
            </property>
            <property name="sizeHint" stdset="0">
             <size>
-             <width>20</width>
+             <width>0</width>
              <height>20</height>
             </size>
            </property>
           </spacer>
          </item>
         </layout>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_9">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -418,6 +394,28 @@ border-radius: 0px;
              </property>
             </spacer>
            </item>
+           <item>
+            <widget class="QLabel" name="label_Facetiousness">
+             <property name="font">
+              <font>
+               <family>Sans Serif</family>
+               <pointsize>24</pointsize>
+               <weight>75</weight>
+               <italic>true</italic>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 255);</string>
+             </property>
+             <property name="text">
+              <string>Facetiousness</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
           </layout>
          </item>
         </layout>
@@ -426,8 +424,15 @@ border-radius: 0px;
      </item>
     </layout>
    </item>
-   <item row="1" column="2">
-    <spacer name="horizontalSpacer_10">
+   <item row="3" column="1">
+    <widget class="QCheckBox" name="checkBox_Adjustments">
+     <property name="text">
+      <string>Show adjustments for analog input</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
@@ -439,7 +444,7 @@ border-radius: 0px;
      </property>
     </spacer>
    </item>
-   <item row="1" column="0">
+   <item row="1" column="2">
     <spacer name="horizontalSpacer_6">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -448,6 +453,19 @@ border-radius: 0px;
       <size>
        <width>40</width>
        <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
       </size>
      </property>
     </spacer>

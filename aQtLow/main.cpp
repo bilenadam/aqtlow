@@ -82,6 +82,7 @@ int main(int argc, char *argv[])
     if(IntfcSettings.value("WindowMode") == "Maximized") w.showMaximized();
     if(IntfcSettings.value("WindowMode") == "Fullscreen") w.showFullScreen();
     w.EnableSound = IntfcSettings.value("EnableSound") == "1";
+    w.SBMode = IntfcSettings.value("StatusBar").toString();
     IntfcSettings.endGroup();
     IntfcSettings.disconnect();
 

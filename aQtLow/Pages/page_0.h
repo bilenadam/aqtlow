@@ -45,11 +45,14 @@ public slots:
     void Refresh();
     void SetPage(QString Page) {this->Page = Page;}
 
+    void Facetiousness(double Score);
+
 signals:
     void PageStatus(QString Status);
 
 private slots:
 
+    void on_checkBox_Adjustments_clicked();
 };
 
 #endif // PAGE_0_H

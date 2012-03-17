@@ -43,6 +43,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     emit HidePages();
     ui->SBPageStatus->clear();
+    ui->SBPrcIcon->clear();
 }
 
 MainWindow::~MainWindow()
@@ -113,6 +114,7 @@ void MainWindow::PageStatus(QString Status)
     Font = this->font();
     Font.setBold(true);
     ui->SBPageStatus->setFont(Font);
+    ui->SBPageStatus->show();
     emit CurrentPage(Status);
 }
 
@@ -212,7 +214,7 @@ void MainWindow::Announce(int Level, QString Name, QString Text)
     QProcess Process;
     CoilByName Cbn;
     QFile NameSound, LevelSound;
-    QString Command;
+    QString Command;    
     ui->statusBar->showMessage(Text, 10000);
     if(Level == 1) ui->statusBar->setStyleSheet(QString("background-color: %1; color: %2").arg("blue").arg("white"));
     if(Level == 2) ui->statusBar->setStyleSheet(QString("background-color: %1; color: %2").arg("orange").arg("black"));
