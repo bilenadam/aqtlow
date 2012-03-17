@@ -5,7 +5,7 @@ dTxfrTCP and dTxfrUSB
 Arduino libraries (put in /home/user/sketchbook/libraries)
 
 GripTest
-Arduino program for Grip Test game / serial only / non-gui (put in /home/dee/sketchbook)
+Arduino program for Grip Test game / serial only / non-gui (put in /home/user/sketchbook)
 
 
 aQtLow
