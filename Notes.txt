@@ -1,16 +1,22 @@
 these folders are:
 
-
 dTxfrTCP and dTxfrUSB
-Arduino libraries (put in /home/user/sketchbook/libraries)
+ Arduino libraries
+  Put in /home/user/sketchbook/libraries
 
-GripTest
-Arduino program for Grip Test game / serial only / non-gui (put in /home/user/sketchbook)
-
+DigTemp
+ Arduino program for Digital Temperature
+  Put in /home/user/sketchbook
+It depends on the dallastemperature and onewire libraries.
+http://milesburton.com/Dallas_Temperature_Control_Library
+http://www.pjrc.com/teensy/td_libs_OneWire.html
 
 aQtLow
-QT app (put in QT projects folder)
+ QT app
+  Put in QT projects folder
 
 aQtLowData
-data files for QT app (put in /home/user)
+ data files for QT app
+  Put in /home/user 
+  Or in windows C:\documents and settings\username
 If the QT app can't find it, it will build a skeleton of it in the default user folder.

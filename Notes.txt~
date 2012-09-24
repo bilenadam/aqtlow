@@ -1,0 +1,19 @@
+these folders are:
+
+dTxfrTCP and dTxfrUSB
+ Arduino libraries
+  Put in /home/user/sketchbook/libraries
+
+DigTemp
+ Arduino program for Digital Temperature
+  Put in /home/user/sketchbook
+
+aQtLow
+ QT app
+  Put in QT projects folder
+
+aQtLowData
+ data files for QT app
+  Put in /home/user 
+  Or in windows C:\documents and settings\username
+If the QT app can't find it, it will build a skeleton of it in the default user folder.

@@ -2,12 +2,11 @@
  * @file MessageWindow.h
  * @brief Message Window.
  * @see MessageWindow
- * @author Micha³ Policht
+ * @author Micha? Policht
  */
 
 #ifndef MESSAGEWINDOW_H_
 #define MESSAGEWINDOW_H_
-
 
 #include <QDockWidget>
 #include <QTextEdit>
@@ -35,7 +34,7 @@ class MessageWindow: public QDockWidget
 		virtual void customEvent(QEvent* event);
 		
 	public:
-		enum EventType {MessageEvent = QEvent::User};	///< Custom event types.
+        enum EventType {MessageEventType = QEvent::User};	///< Custom event types.
 		
 		/**
 		 * Default constructor.
@@ -65,19 +64,19 @@ class MessageWindow: public QDockWidget
 
 
 /**
- * Message Event. Custom event used by @ref MessageWindow to provide multi-threaded 
+ * Message Event. Custom event used by @ref MessageWindow to provide multi-threaded
  * access. Encapsulates message inside @a msg variable.
  */
 class MessageEvent: public QEvent
 {
-	public:
-		QString msg;	///< Message string.
-		
-		/**
-		 * Contructor.
-		 * 	@param msg message to post.
-		 */
-		MessageEvent(QString & msg);
+    public:
+        QString msg;	///< Message string.
+
+        /**
+         * Contructor.
+         * 	@param msg message to post.
+         */
+        MessageEvent(QString & msg);
 };
 
 #endif /*MESSAGEWINDOW_H_*/

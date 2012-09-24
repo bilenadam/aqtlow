@@ -31,15 +31,10 @@ QT += network
 # for Sqlite
 QT += sql
 
-INCLUDEPATH += qextserialport/src
-unix:{
-        DEFINES   = _TTY_POSIX_
-        SOURCES +=  qextserialport/src/posix_qextserialport.cpp
-}
-win32:{
-        DEFINES  = _TTY_WIN_
-        SOURCES +=  qextserialport/src/win_qextserialport.cpp
-}
+# Link to QExtSerialPort per their instructions.
+# This "pri" method became available with version 1.2Beta2
+# This should be the only mention of qextserailport in this pro file.
+include(qextserialport/src/qextserialport.pri)
 
 INCLUDEPATH += Pages        # Page meant to be used as "promote tos"
 INCLUDEPATH += Widgets      # Custom widgets
@@ -76,7 +71,6 @@ SOURCES += main.cpp\
     notelog.cpp \
     lognote.cpp \
     configure_dtxfrusb.cpp \
-    qextserialport/src/qextserialport.cpp \
     dtransferusb.cpp \
     about.cpp \
     configure_dtxfrtcp.cpp \
@@ -113,7 +107,6 @@ HEADERS += mainwindow.h \
     configure_prcs.h \
     notelog.h \
     lognote.h \
-    qextserialport/src/qextserialport.h \
     dtransferusb.h \
     configure_dtxfrusb.h \
     configure_dtxfrusb.h \
